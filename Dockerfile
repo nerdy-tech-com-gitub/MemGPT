@@ -1,5 +1,5 @@
 # The builder image, used to build the virtual environment
-FROM python:3.12.2-bookworm as builder
+FROM python:3.12.10-bookworm as builder
 ARG LETTA_ENVIRONMENT=PRODUCTION
 ENV LETTA_ENVIRONMENT=${LETTA_ENVIRONMENT}
 RUN pip install poetry==1.8.2
